@@ -1,3 +1,4 @@
+a<- read.csv("household_power_consumption.txt", sep=";")
 a$Date<- strptime(paste(a$Date, a$Time, sep=" "), "%d/%m/%Y %H:%M:%S")
 
 png("plot-1.png")
